@@ -21,8 +21,27 @@ header {
 
         }
     }
-}
 
-figure {
-    height: 70px;
+    figure {
+        height: 70px;
+    }
+
+    form {
+        position: relative;
+
+        input {
+            border: none;
+            border-bottom: 2px solid #0282F9;
+            text-align: end;
+            padding-right: 30px;
+        }
+
+        button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            top: 3px;
+            right: 5px
+        }
+    }
 }
