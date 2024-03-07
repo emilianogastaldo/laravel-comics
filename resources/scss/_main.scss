@@ -10,41 +10,35 @@ main {
         background-repeat: no-repeat;
         background-position: top;
     }
-}
 
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -1rem;
-    padding: 3rem 0;
-
-    .card {
-        flex-basis: calc(100%/6);
-        padding: 1rem;
-        cursor: pointer;
+    .row {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+        padding: 3rem 0;
 
-        .card-img {
-            display: block;
-            aspect-ratio: 1/1;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: top;
-        }
+        .card {
+            flex-basis: calc(100%/6);
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
+            .card-img {
+                display: block;
+            }
 
-        .card-text {
-            font-family: 'Open Sans', sans-serif;
-            text-transform: uppercase;
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-text {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+            }
         }
     }
 }
