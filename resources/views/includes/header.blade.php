@@ -16,7 +16,7 @@
                 <ul class="flex">
                     @foreach ( $links = config('header_links') as $link )
                     <li>
-                        <a href="{{$link['url']}}" class="{{Route::is($link['text'])}}">{{$link['text']}}</a>
+                        <a href="{{route($link['url'])}}" class="{{Route::is($link['url'])? 'active' : ''}}">{{$link['text']}}</a>
                     </li>                    
                     @endforeach
                 </ul>
