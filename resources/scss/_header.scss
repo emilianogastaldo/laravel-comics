@@ -1,6 +1,9 @@
 // HEADER
+
+@use 'vars' as *;
+
 header {
-    background-color: #FFFFFF;
+    background-color: $white-color;
     padding: 15px 0;
 
     ul {
@@ -8,15 +11,15 @@ header {
 
         li a {
             text-transform: uppercase;
-            color: #484848;
+            color: $dark-gray-color;
             font-size: 0.8rem;
             font-weight: 700;
             padding-bottom: 37px;
 
             &:hover,
             &.active {
-                color: #0282F9;
-                border-bottom: 5px solid #0282F9;
+                color: $primary-color;
+                border-bottom: 5px solid $primary-color;
             }
 
         }
@@ -31,7 +34,7 @@ header {
 
         input {
             border: none;
-            border-bottom: 2px solid #0282F9;
+            border-bottom: 2px solid $primary-color;
             text-align: end;
             padding-right: 30px;
         }

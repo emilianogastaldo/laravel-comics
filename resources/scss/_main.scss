@@ -1,8 +1,10 @@
 // MAIN
+@use 'vars' as *;
+
 main {
     padding-bottom: 2rem;
-    background-color: #1C1C1C;
-    color: white;
+    background-color: $main-color;
+    color: $white-color;
 
     .jumbotron {
         height: 400px;
@@ -24,7 +26,7 @@ main {
             gap: 1rem;
 
             .card-text {
-                font-family: 'Open Sans', sans-serif;
+                font-family: $open-sans;
                 text-transform: uppercase;
             }
         }

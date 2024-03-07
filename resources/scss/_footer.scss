@@ -1,10 +1,13 @@
 // FOOTER
+
+@use 'vars' as *;
+
 footer {
     background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white
+    color: $white-color;
 }
 
 #footer-top {
@@ -29,14 +32,15 @@ footer {
             margin: 1rem 0;
 
             li a {
-                font-family: 'Open Sans', sans-serif;
-                color: #818181;
+                font-family: $open-sans;
+                color: $gray-color;
                 text-transform: capitalize;
                 font-size: small;
                 line-height: 1.3rem;
 
                 &:hover {
-                    color: white;
+                    color: $white-color;
+                    ;
                 }
             }
 
@@ -46,7 +50,7 @@ footer {
 }
 
 #footer-bottom {
-    background-color: #303030;
+    background-color: $footer-color;
     padding: 2rem 0;
 }
 
@@ -56,7 +60,7 @@ footer {
     gap: 1.5rem;
 
     .follow-btn {
-        color: #0282F9;
+        color: $primary-color;
         font-size: 1.4rem;
     }
 

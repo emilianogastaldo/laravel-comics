@@ -1,6 +1,8 @@
+@use 'vars' as *;
+
 .blue-section {
-    background-color: #0282F9;
-    color: white;
+    background-color: $primary-color;
+    color: $white-color;
     padding: 3rem 0;
 
     ul {
@@ -12,8 +14,8 @@
     }
 
     a {
-        font-family: "Open Sans", sans-serif;
-        color: white;
+        font-family: $open-sans;
+        color: $white-color;
         text-transform: uppercase;
         font-size: 14px;
         display: flex;
