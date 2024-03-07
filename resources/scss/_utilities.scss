@@ -1,0 +1,43 @@
+// Utilities CSS
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex-column {
+    flex-direction: column;
+}
+
+.btn {
+    color: white;
+    background-color: #0282F9;
+    font-weight: 600;
+    border: 2px solid #0282F9;
+}
+
+.btn-label {
+    font-size: 2rem;
+    padding: .5rem 2.5rem;
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    translate: 0 -50%;
+}
+
+.btn-more {
+    font-size: small;
+    padding: 10px 50px;
+
+}
+
+.position-relative {
+    position: relative
+}
