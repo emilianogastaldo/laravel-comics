@@ -32,9 +32,11 @@
                 <div id="footer-bottom-nav-right">
                     <ul>
                         <li><a href="#" class="follow-btn">FOLLOW US</a></li>
-                        <li v-for="(icon, i) in icons" :key="i">
-                            <a :href="icon.href"><img :src="iconPath" :alt="icon.name"></a>
-                        </li>
+                        @foreach ($icons=config('footer_icons') as $icon)
+                        <li>
+                            <a href="{{$icon['href']}}"><img src="{{asset('images/' . $icon['img'])}}" alt="{{$icon['name']}}"></a>
+                        </li>                            
+                        @endforeach
                     </ul>
                 </div>
             </nav>

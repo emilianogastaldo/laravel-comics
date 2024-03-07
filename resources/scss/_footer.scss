@@ -21,7 +21,30 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         align-content: start;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: larger;
+        }
+
+        ul {
+            margin: 1rem 0;
+
+            li a {
+                font-family: 'Open Sans', sans-serif;
+                color: #818181;
+                text-transform: capitalize;
+                font-size: small;
+                line-height: 1.3rem;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+        }
     }
+
 }
 
 #footer-bottom {
@@ -38,26 +61,8 @@ footer {
         color: #0282F9;
         font-size: 1.4rem;
     }
-}
 
-h4 {
-    text-transform: uppercase;
-    font-size: larger;
-}
-
-ul {
-    margin: 1rem 0;
-
-    li a {
-        font-family: 'Open Sans', sans-serif;
-        color: #818181;
-        text-transform: capitalize;
-        font-size: small;
-        line-height: 1.3rem;
-
-        &:hover {
-            color: white;
-        }
+    img:hover {
+        filter: brightness(200%);
     }
-
 }
