@@ -11,6 +11,7 @@
 </head>
 <body>
     @include('includes.header')
+    <section class="jumbotron"></section>
 
     @yield('main')
     

@@ -6,12 +6,7 @@ main {
     background-color: $main-color;
     color: $white-color;
 
-    .jumbotron {
-        height: 400px;
-        background-image: url("../img/jumbotron.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-    }
+
 
     .row {
         margin: 0 -1rem;

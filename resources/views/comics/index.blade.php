@@ -5,8 +5,7 @@
 @section('main')
 
 <main>
-    <section class="jumbotron">
-    </section>
+    
     <section class="wrapper flex flex-column position-relative">
         <div class="row">
             @foreach ($comics=config('comics') as $index => $comic)                
