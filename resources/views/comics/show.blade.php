@@ -11,22 +11,24 @@
         </figure>        
     </section>
     <section class="preview">
-        <div class="text-section">
-            <h2>{{$comic['title']}}</h2>
-            <div>
-                <div>
-                    <p>US Price: {{$comic['price']}}</p>
-                    <p>AVAILABLE</p>
+        <div class="wrapper">            
+            <div class="text-section">
+                <h2>{{$comic['title']}}</h2>
+                <div class="flex">
+                    <div class="flex comic-available label-available">
+                        <p class="color-light-green">US Price: <span class="color-white">{{$comic['price']}}</span></p>
+                        <p class="color-light-green">AVAILABLE</p>
+                    </div>
+                    <div class="color-white label-available">
+                        Check Availability <i class="fa-solid fa-caret-down"></i>
+                    </div>
                 </div>
-                <div>
-                    Check Availability
-                </div>
+                <p class="description">{{$comic['description']}}</p>
             </div>
-            <p>{{$comic['description']}}</p>
-        </div>
-        <div class="adv">
-            <p>ADV</p>
-            <img src="{{asset('images/adv.jpg')}}" alt="">
+            <div class="adv">
+                <p>ADVERTISEMENT</p>
+                <img src="{{asset('images/adv.jpg')}}" alt="">
+            </div>
         </div>
     </section>
     <section class="infos">
