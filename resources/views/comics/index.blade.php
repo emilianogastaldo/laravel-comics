@@ -11,7 +11,7 @@
         <div class="row">
             @foreach ($comics=config('comics') as $index => $comic)                
             <div class="card">
-                <a href="{{route('comics', $index)}}">
+                <a href="{{route('comic', $index)}}">
                     <div class="card-img">
                     <img src="{{asset($comic['thumb'])}}" alt="{{$comic['series']}}">
                     </div>
