@@ -1,6 +1,7 @@
 @extends('layouts.main_templates')
-@dump($comic)
+
 @section('title', $comic['title'])
+
 @section('main')
 <main class="comic">
     <section class="cover-section">
