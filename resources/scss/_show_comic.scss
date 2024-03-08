@@ -99,28 +99,28 @@
         display: flex;
         gap: 3rem;
 
-        h2 {
-            border-bottom: 1px solid lightgray;
-            padding-bottom: 1rem;
-            color: $dark-gray-color;
-        }
-
-        li {
-            border-bottom: 1px solid lightgray;
-            padding: 10px 0;
-            font-family: $open-sans;
-            font-size: small;
-
-            a {
-                color: $primary-color;
-            }
-        }
-
-        .talent {
+        .talent,
+        .specs {
             flex-basis: 50%;
             flex-grow: 0;
             flex-shrink: 0;
 
+            h2 {
+                border-bottom: 1px solid lightgray;
+                padding-bottom: 1rem;
+                color: $dark-gray-color;
+            }
+
+            li {
+                border-bottom: 1px solid lightgray;
+                padding: 10px 0;
+                font-family: $open-sans;
+                font-size: small;
+
+                a {
+                    color: $primary-color;
+                }
+            }
 
             .flex {
                 align-items: flex-start;
@@ -131,12 +131,6 @@
                 flex-grow: 0;
                 flex-shrink: 0;
             }
-        }
-
-        .specs {
-            flex-basis: 50%;
-            flex-grow: 0;
-            flex-shrink: 0;
         }
     }
 

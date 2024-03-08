@@ -70,9 +70,30 @@
             <div class="specs">
                 <h2>Specs</h2>
                 <ul>
-                    <li>Series</li>
-                    <li>Price</li>
-                    <li>Sale date</li>
+                    <li class="flex">
+                        <div>
+                            Series:
+                        </div>
+                        <div class="list-people">
+                            <a href="#">{{$comic['series']}}</a>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div>
+                            U.S. Price:
+                        </div>
+                        <div class="list-people">
+                            {{$comic['price']}}
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div>
+                            On Sale Date:
+                        </div>
+                        <div class="list-people">
+                            {{date_format(date_create($comic['sale_date']), "M d Y")}}
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
