@@ -4,11 +4,13 @@
 @section('main')
 <main class="comic">
     <section class="cover-section">
-        <figure>
-            <p class="cover-label up-right">COMIC BOOK</p>
-            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">        
-            <p class="cover-label bottom">VIEW GALLERY</p>
-        </figure>        
+        <div class="wrapper">
+            <figure >
+                <p class="cover-label up-right">COMIC BOOK</p>
+                <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">        
+                <p class="cover-label bottom">VIEW GALLERY</p>
+            </figure>        
+        </div>
     </section>
     <section class="preview">
         <div class="wrapper">            

@@ -1,6 +1,10 @@
 @use 'vars' as *;
 
-.cover-section {
+.comic .wrapper {
+    max-width: 1000px;
+}
+
+.comic .cover-section {
     background-color: $primary-color;
     height: 100px;
     position: relative;
@@ -9,7 +13,6 @@
         width: 175px;
         position: absolute;
         top: -225;
-        left: 400;
         font-family: $open-sans;
 
         img {
@@ -45,7 +48,6 @@
     font-family: $open-sans;
 
     .wrapper {
-        max-width: 1000px;
         display: flex;
         gap: 3rem;
 
