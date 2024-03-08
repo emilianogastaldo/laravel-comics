@@ -13,7 +13,7 @@
     @include('includes.header')
 
     @yield('main')
-    @include('includes.blue_section')
+    
     @include('includes.footer')
 </body>
 </html>
