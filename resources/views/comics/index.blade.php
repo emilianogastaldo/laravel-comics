@@ -22,5 +22,6 @@
         <div class="btn btn-label"> CURRENT SERIES</div>
     </section>
 </main>
-    
+
+@include('includes.blue_section')
 @endsection
