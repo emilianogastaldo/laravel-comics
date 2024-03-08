@@ -40,9 +40,7 @@
                 <h2>Talent</h2>
                 <ul>
                     <li class="flex">
-                        <div>
-                            Art by:
-                        </div>
+                        <div>Art by:</div>
                         <div class="list-people">
                             @foreach ( $comic['artists'] as  $artist)
                                 <a href="#">{{$artist}}</a>, 
@@ -53,9 +51,7 @@
                         </div>
                     </li>
                     <li class="flex">
-                        <div>
-                           Written by:
-                        </div>
+                        <div>Written by:</div>
                         <div class="list-people">
                             @foreach ( $comic['writers'] as  $writer)
                                 <a href="#">{{$writer}}</a>, 
@@ -71,25 +67,19 @@
                 <h2>Specs</h2>
                 <ul>
                     <li class="flex">
-                        <div>
-                            Series:
-                        </div>
+                        <div>Series:</div>
                         <div class="list-people">
                             <a href="#">{{$comic['series']}}</a>
                         </div>
                     </li>
                     <li class="flex">
-                        <div>
-                            U.S. Price:
-                        </div>
+                        <div>U.S. Price:</div>
                         <div class="list-people">
                             {{$comic['price']}}
                         </div>
                     </li>
                     <li class="flex">
-                        <div>
-                            On Sale Date:
-                        </div>
+                        <div>On Sale Date:</div>
                         <div class="list-people">
                             {{date_format(date_create($comic['sale_date']), "M d Y")}}
                         </div>
