@@ -4,8 +4,7 @@
 
 @section('main')
 
-<main>
-    
+<main class="comics">    
     <section class="wrapper flex flex-column position-relative">
         <div class="row">
             @foreach ($comics=config('comics') as $index => $comic)                
