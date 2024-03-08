@@ -33,25 +33,48 @@
             </div>
         </div>
     </section>
+    <hr>
     <section class="infos">
-        <div class="talent">
-            <h2>Talent</h2>
-            <ul>
-                <li>
-                    art
-                </li>
-                <li>
-                    write
-                </li>
-            </ul>
-        </div>
-        <div class="specs">
-            <h2>SPECS</h2>
-            <ul>
-                <li>Series</li>
-                <li>Price</li>
-                <li>Sale date</li>
-            </ul>
+        <div class="wrapper">
+            <div class="talent">
+                <h2>Talent</h2>
+                <ul>
+                    <li class="flex">
+                        <div>
+                            Art by:
+                        </div>
+                        <div class="list-people">
+                            @foreach ( $comic['artists'] as  $artist)
+                                <a href="#">{{$artist}}</a>, 
+                                @if($loop->last)
+                                    <a href="#">{{$artist}}</a>
+                                @endif
+                            @endforeach
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div>
+                           Written by:
+                        </div>
+                        <div class="list-people">
+                            @foreach ( $comic['writers'] as  $writer)
+                                <a href="#">{{$writer}}</a>, 
+                                @if($loop->last)
+                                    <a href="#">{{$writer}}</a>
+                                @endif
+                            @endforeach
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="specs">
+                <h2>Specs</h2>
+                <ul>
+                    <li>Series</li>
+                    <li>Price</li>
+                    <li>Sale date</li>
+                </ul>
+            </div>
         </div>
     </section>
 </main>  

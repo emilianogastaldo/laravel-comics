@@ -90,3 +90,54 @@
         }
     }
 }
+
+.comic .infos {
+    background-color: $light-gray;
+    padding: 3rem 0;
+
+    .wrapper {
+        display: flex;
+        gap: 3rem;
+
+        h2 {
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 1rem;
+            color: $dark-gray-color;
+        }
+
+        li {
+            border-bottom: 1px solid lightgray;
+            padding: 10px 0;
+            font-family: $open-sans;
+            font-size: small;
+
+            a {
+                color: $primary-color;
+            }
+        }
+
+        .talent {
+            flex-basis: 50%;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+
+            .flex {
+                align-items: flex-start;
+            }
+
+            .list-people {
+                flex-basis: 70%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        .specs {
+            flex-basis: 50%;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+
+}
