@@ -1,0 +1,39 @@
+@use 'vars' as *;
+
+.cover-section {
+    background-color: $primary-color;
+    height: 100px;
+    position: relative;
+
+    figure {
+        width: 175px;
+        position: absolute;
+        top: -225;
+        left: 400;
+        font-family: $open-sans;
+
+        img {
+            border: 1px solid $white-color;
+
+        }
+
+        .cover-label {
+            background-color: $label-color;
+            color: $white-color;
+            text-align: center;
+            padding: 0 5px;
+        }
+
+        .up-right {
+            display: inline-block;
+            translate: 1px calc(100% + 1px);
+        }
+
+        .bottom {
+            width: calc(100% - 2px);
+            margin: auto;
+            translate: 0 calc(-100% - 1px)
+        }
+    }
+
+}
