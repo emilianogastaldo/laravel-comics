@@ -33,7 +33,6 @@
             </div>
         </div>
     </section>
-    <hr>
     <section class="infos">
         <div class="wrapper">
             <div class="talent">
@@ -86,6 +85,17 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="links">
+            <div class="container">
+                <ul class="flex">
+                    <li><a href="">DIGITAL COMICS <img src="{{asset('images/cta-icons.png')}}" alt="ok"> </a> </li>
+                    <li><a href="">SHOP DC <img src="{{asset('images/cta-icons.png')}}" alt="ok"> </a> </li>
+                    <li><a href="">COMIC SHOP LOCATOR <img src="{{asset('images/cta-icons.png')}}" alt="ok"> </a> </li>
+                    <li><a href="">SUB SCRIPTIONS <img src="{{asset('images/cta-icons.png')}}" alt="ok"> </a> </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 </main>  

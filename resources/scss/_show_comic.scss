@@ -46,6 +46,7 @@
     color: $dark-gray-color;
     padding: 4rem 0;
     font-family: $open-sans;
+    border-bottom: 1px solid lightgray;
 
     .wrapper {
         display: flex;
@@ -93,11 +94,12 @@
 
 .comic .infos {
     background-color: $light-gray;
-    padding: 3rem 0;
+    padding-top: 3rem;
 
     .wrapper {
         display: flex;
         gap: 3rem;
+        padding-bottom: 3rem;
 
         .talent,
         .specs {
@@ -134,4 +136,32 @@
         }
     }
 
+    .links {
+        border-top: 1px solid lightgray;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        li {
+            flex-basis: calc(100% / 4);
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-left: 1px solid lightgray;
+
+            a {
+
+                display: flex;
+                padding: 1rem;
+                font-size: small;
+                font-weight: bold;
+                color: $gray-color;
+            }
+        }
+
+        ul:last-child {
+            border-right: 1px solid lightgray;
+        }
+    }
 }
