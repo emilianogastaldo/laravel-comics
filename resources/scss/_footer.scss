@@ -14,7 +14,8 @@ footer {
     background-image: url('../img/dc-logo-bg.png');
     background-repeat: no-repeat;
     background-position: right;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     height: 400px;
 
     .row {
@@ -40,13 +41,26 @@ footer {
 
                 &:hover {
                     color: $white-color;
-                    ;
                 }
             }
 
         }
     }
 
+    p,
+    span {
+        font-size: small;
+        color: $gray-color;
+        font-family: $open-sans;
+
+        a {
+            color: $primary-color
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 #footer-bottom {

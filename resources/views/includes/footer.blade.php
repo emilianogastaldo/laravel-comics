@@ -14,6 +14,8 @@
             </div>
             @endforeach
         </div>
+        <p>All Site Content TM and C 2020 DC Entertainment, unless otherwis <a href="">noted here</a>. All rights reserved.</p>
+        <span><a href="">Cookies Settings</a></span>
     </section>
     <section id="footer-bottom">
         <nav class="wrapper flex">
@@ -32,4 +34,5 @@
             </div>
         </nav>
     </section>
+
 </footer>
